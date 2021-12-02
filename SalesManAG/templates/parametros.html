@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <style>
+        .center {
+            margin: auto;
+            width: 50%;
+        }
+        .form_Button {
+            margin: auto;
+            width: 100%;
+        }
+        .tab { 
+            display:inline-block; 
+            margin-left: 40px; 
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <span class="navbar-brand mb-0 h1">Algoritmo genetico SalesMan</span>
+        </div>
+      </nav>
+      <p class="tab"></p>
+      <p class="tab"></p>
+    <form action = "/map" method = "GET" class="center">
+        <table class="center">
+            <tr>
+                <th><p class="form-label">Poblacion</p></th>
+            </tr>
+            <tr>
+                <th><input type="text" name="poblacion" placeholder="100" class="form-control"></th>
+            </tr>
+            <tr>
+                <th><p class="form-label">Porcentaje de Mutacion</p></th>
+            </tr>
+            <tr>
+                <th><input type="text" name="mutacion" placeholder="0.01" class="form-control"></th>
+            </tr>
+            <tr>
+                <th><p class="form-label">Cantidad de elite</p></th>
+            </tr>
+            <tr>
+                <th><input type="text" name="elite" placeholder="20" class="form-control"></th>
+            </tr>
+            <tr>
+                <th><p>Cantidad de generaciones</p></th>
+            </tr>
+            <tr>
+                <th><input type="text" name="generaciones" placeholder="500" class="form-control"></th>
+            </tr>
+            <tr>
+                <th><p class="tab"></p></th>
+            </tr>
+            <tr>
+                <th><div class="input-group">
+                    <span class="input-group-text">Coordenadas</span>
+                    <input class="form-control" aria-label="With textarea" type="text" name="coordenadas" placeholder="4,2 9,5 3,1"></textarea>
+                  </div></th>
+            </tr>
+            <tr>
+                <th><p class="tab"></p></th>
+            </tr>
+            <tr>
+                <th><input type="submit" value="Enviar" class="btn btn-outline-success form_Button"></th>
+            </tr>
+        </table>
+    </form>
+    <p class="tab"></p>
+    <div class="alert alert-danger center" role="alert">
+        Para un funcionamiento optimo escriba los valores recomendados, para coordenadas aleatorias dejar en blanco la seccion de coordenadas, http://epsg.io/ para encontrar coordenadas
+      </div>
+</body>
+</html>
